@@ -3,6 +3,6 @@ This script exists to automate the setup of Ligolo-ng (https://github.com/nicoch
 * Note that the user is pop by default, you need to change it for a different user. * 
 
 
-Run `sudo ln -s /opt/liggy/liggy.sh /usr/local/bin/liggy` to be able to call it as liggy from any directory. 
+Run `sudo chmod +x /opt/liggy/liggy.sh && ln -s /opt/liggy/liggy.sh /usr/local/bin/liggy` to be able to call it as liggy from any directory. 
 
 
