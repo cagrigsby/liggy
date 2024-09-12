@@ -36,7 +36,7 @@ baseIP=$(echo "$targetIP" | cut -d/ -f1)
 
 # Perform the commands
 echo "Adding TUN/TAP interface..."
-sudo ip tuntap add user pop mode tun ligolo
+sudo ip tuntap add user $(whoami) mode tun ligolo
 
 echo "Setting up the TUN/TAP interface..."
 sudo ip link set ligolo up
